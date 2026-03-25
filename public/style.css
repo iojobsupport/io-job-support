@@ -1,0 +1,10 @@
+body{margin:0;font-family:Arial;}
+header{display:flex;justify-content:space-between;padding:15px;background:#0A2540;}
+.logo{height:50px;}
+nav a{color:white;margin:10px;text-decoration:none;}
+.hero{background:linear-gradient(#0A2540,#1e3a8a);color:white;text-align:center;padding:100px;}
+.section{text-align:center;padding:50px;}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;}
+.card{background:#f4f4f4;margin:10px;padding:20px;border-radius:10px;width:200px;}
+footer{background:#0A2540;color:white;text-align:center;padding:15px;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:green;color:white;padding:15px;border-radius:50%;}
