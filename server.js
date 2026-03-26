@@ -21,13 +21,14 @@ app.get('/', (req, res) => {
 // Contact form
 app.post('/contact', (req, res) => {
     let data = [];
+    const filePath = 'data/contacts.json';
 
-    if (fs.existsSync('contacts.json')) {
-        data = JSON.parse(fs.readFileSync('contacts.json'));
+    if (fs.existsSync(filePath)) {
+        data = JSON.parse(fs.readFileSync(filePath));
     }
 
     data.push(req.body);
-    fs.writeFileSync('contacts.json', JSON.stringify(data, null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 
     res.send("Submitted successfully!");
 });
